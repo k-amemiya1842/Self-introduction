@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+
+/* all
+--------------------*/
+
+a {
+    text-decoration:none;
+}
+    
+a:link {
+    color:#000000;
+}
+    
+a:visited {
+    color:#000000;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+/* header
+--------------------*/
+header {
+    height: 180px;
+    width: 100%;
+}
+
+.header-left {
+    margin-left: 50px; 
+    float: left;
+}
+
+.header-left img {
+    width: 250px;
+}
+
+.header-right {
+    float: right;
+    margin-right: 50px;
+}
+
+.header-right a {
+    display: inline-block;
+}
+
+.btn {
+    opacity: 0.6;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.twitter {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.instagram {
+    width: 25px;
+    height: 25px;
+}
+
+/* navi
+--------------------*/
+
+nav {
+    height: 15px;
+    margin: 80px auto 0 auto;
+    position: relative;
+}
+
+nav ul {
+    margin-left: auto;
+    float: right;
+}
+
+nav li {
+    margin-right: 50px;
+    opacity: 0.6;
+    font-weight: bold;
+    float: left;
+}
+
+nav li:hover {
+    opacity: 1;
+}
+
+#navi {
+    display: none;
+}
+
+
+
+
+/* main
+--------------------*/
+
+.main {
+    background-image: url("img/main.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.message {
+    color: #4F4B4B;
+    width: 60%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.message h2 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    padding-top: 50px;
+}
+
+.message p {
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 40px;
+    padding-bottom: 50px;
+}
+
+/* contents
+--------------------*/
+
+.contents {
+    margin-top: 50px;
+}
+
+.contents h2 {
+    text-align: center;
+    color:#4F4B4B;
+    font-size: 30px;
+    font-family: 'Gurmukhi MN',sans-serif;
+}
+
+.profile-area {
+    height: 400px;
+}
+
+.icon {
+    text-align: center;
+    margin: 50px 10px 0 0;
+    width: 33%;
+    float: left;
+
+}
+.icon img{
+    width: 80%;
+}
+
+.profile {
+    width: 60%;
+    float: left;
+    margin-top: 20px;
+    color:#4F4B4B;
+}
+
+.profile h3 {
+    font-size: 40px;
+    border-bottom: 1px solid #DDDDDD;
+    letter-spacing: 5px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.pf-table {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
+.pf-table dt {
+    float: left;
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom:  20px;
+}
+
+.pf-table dd{
+    padding-bottom:  20px;
+}
+
+.reason {
+
+    padding-left:20px;
+}
+
+.reason p {
+    margin-top: 0;
+}
+
+.clear {
+    clear:  both; 
+}
+
+.vision-area {
+    margin-top: 50px;
+    text-align: center;
+    color: #4F4B4B;
+    height: 380px;
+}
+
+.visions {
+    width: 33%;
+    float: left;
+}
+
+.visions img {
+    width:60%;
+}
+
+.vision-icon p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text-contents {
+    width: 80%;
+    display: inline-block;
+}
+
+
+form {
+    color: #4F4B4B;
+    border-bottom: 1px solid #eee;
+    margin-top: 50px;
+}
+
+.form-item {
+    width: 60%;
+    margin: 20px auto;
+    height: 50px;
+}
+
+.leabel {
+    float: left;
+    width: 40%;
+    font-size: 20px;
+    border-left: 5px solid #4F4B4B;
+    text-align: left;
+    padding-left: 20px;
+}
+
+input {
+    padding: 5px;
+}
+
+.inputs {
+    float: left;
+    width: 50%;
+}
+
+textarea {
+    width: 40%;
+    padding: 10px;
+    height: 100px;
+
+} 
+
+.submit {
+    text-align: center;
+}
+
+.mandatory {
+    color: white;
+    font-size: 12px;
+    background-color: red;
+    padding: 0 3px;
+    margin-left: 5px;
+}
+
+.contact-submit {
+    background-color: #4F4B4B;
+    color: white;
+    width: 30%;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.page_top{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #4F4B4B;
+    opacity: 0.6;
+}
+  
+.page_top a{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+footer img {
+    width: 125px;
+}
+
+footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+}

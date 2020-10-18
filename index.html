@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>自己紹介</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <script src="https://kit.fontawesome.com/94583bb1d4.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <div class="header-left">
+                    <a href="index.html">
+                        <img class="btn"src="img/logo.png" alt="KAZUYA">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <a class="btn" href="https://twitter.com/grangran1842/" target="_blank" rel="noopener noreferrer">
+                        <img class="twitter btn" src="img/twitter-brands.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.instagram.com/gura9567/" target="_blank" rel="noopener noreferrer">
+                        <img class="instagram btn" src="img/instagram-brands.svg" alt="instagram">
+                    </a>
+                </div>
+        <!-- navi -->
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#vision">Vison</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        <!-- hamburger -->
+                <div id="navi">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#vision">Vison</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                <div id="hamburger"></div>
+                    <span class="inner_line" id="line1"></span>
+                    <span class="inner_line" id="line2"></span>   
+                    <span class="inner_line" id="line3"></span>           
+                </div>
+
+                <script>
+                    function hamburger() {
+                        document.getElementById('line1').classList.toggle('line_1');
+                        document.getElementById('line2').classList.toggle('line_2');
+                        document.getElementById('line3').classList.toggle('line_3');
+                        document.getElementById('navi').classList.toggle('in');
+                    }
+                    document.getElementById('hamburger').addEventListener('click' , function () {
+                        hamburger();
+                    } );
+                </script>
+
+        </header>
+
+
+        <!-- main -->
+        <div class="main">
+            <div class="message">
+            <h2>35歳、未経験からの挑戦</h2>
+            <p>今からだって出来ない事はない<br>Continue to challenge.</p>
+            </div>
+        </div>
+
+        <!-- contents -->
+        <div class="container">
+            <div class="contents" id="about">
+                <h2>About</h2>
+            </div>
+            <div class="profile-area">
+                <div class="icon">
+                    <img src="img/icon.JPG" alt="雨宮和也">
+                </div>
+                <div class="profile">
+                    <h3>雨宮 和也</h3>
+                    <dl class="pf-table">
+                        <dt>生年月日：</dt>
+                        <dd>1985年7月20日（35歳）</dd>
+                        <dt>職業：</dt>
+                        <dd>会社員（営業職）</dd>
+                        <dt>趣味：</dt>
+                        <dd >音楽、フットサル</dd>
+                    </dl>
+                    <div class="reason">
+                        <p>約10年前に某家電量販店のEC事業部にて、ECサイトの運営や管理をしていた際に、
+                            取引先のエンジニアの方の仕事振りを見てプログラミングに興味を持ちました。
+                            それから本を買ってみたり、自社のHPをいじってみたり、少しだけHTMLには触れていました。
+                            しかし昨今の情勢、現在の自分の収入、将来を考えた時に、今チャレンジするのはこれだ！と思い立ち現在に至ります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contents" id="vision">
+                <h2>Vision</h2>
+            </div>
+            <div class="vision-area">
+                <div class="visions">
+                    <div class="vision-icon">
+                        <p class="career">キャリアアップ</p>
+                        <img src="img/career.png" alt="キャリアアップ">
+                    </div>
+                    <p class="text-contents">フリーのエンジニアとして案件を獲得できるように成長し、自分の価値を高めます</p>
+                </div>
+                <div class="visions">
+                    <div class="vision-icon">
+                        <p>課題解決</p>
+                        <img src="img/task.png" alt="課題解決">
+                    </div>
+                    <p class="text-contents">経験を活かし、システムを通して売上UPや顧客満足度UPに繋がる提案ができる、コンサルタント兼エンジニアになります</p>
+                </div>
+                <div class="visions">
+                    <div class="vision-icon">
+                        <p>地域活性化</p>
+                        <img src="img/area.png" alt="地域活性化">
+                    </div>
+                    <p class="text-contents">こんな時代だからこそITのチカラで地域、お店、人が繋がり、活性化していく活動を出来るようになります</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div class="container">
+            <div class="contents" id="contact">
+                <h2>Contact</h2>
+            </div>
+            <form name="myform" onsubmit="return checkText()">
+                <div class="form-item">
+                    <leabel class="leabel">お名前<span class="mandatory">必須</span></leabel>
+                    <input class="inputs" name="check" type="text">
+                </div>
+                <div class="form-item">
+                    <leabel class="leabel">貴社名</leabel>
+                    <input class="inputs"type="text">
+                </div>
+                <div class="form-item">
+                    <leabel class="leabel">メールアドレス<span class="mandatory">必須</span></leabel>
+                    <input class="inputs" name="check" type="email">
+                </div>
+                <div class="form-item">
+                    <leabel class="leabel">お問合せ内容<span class="mandatory">必須</span></leabel>
+                    <textarea class="inputs" name="check" ></textarea>
+                </div>
+                <div class="submit clear">
+                    <leabel><input class="contact-submit" type="submit" value="送信する"></leabel>
+                </div>
+            </form>
+            <script>
+                function checkText() {
+                  var text = document.myform.check.value;
+              
+                  if(text.length === 0) {
+                      alert('必須項目を入力して下さい');
+                      return false;
+                    }
+                }
+              </script>
+        </div>
+        <div class="page_top">
+            <a href="#"></a>
+        </div>
+
+        <!-- footer -->
+        <footer>
+              <img src="img/logo.png">
+              <p>Continue to challenge.</p>
+        </footer>
+    </body>
+
+</html>
+
