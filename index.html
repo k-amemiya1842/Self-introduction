@@ -12,7 +12,7 @@
     <body>
         <!-- header -->
         <header>
-            <div class="container">
+            <div class="container" id="top">
                 <div class="header-left">
                     <a href="index.html">
                         <img class="btn"src="img/logo.png" alt="KAZUYA">
@@ -29,37 +29,24 @@
         <!-- navi -->
                 <nav>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#vision">Vison</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" class="js-smooth-scroll">About</a></li>
+                        <li><a href="#vision" class="js-smooth-scroll">Vison</a></li>
+                        <li><a href="#contact" class="js-smooth-scroll">Contact</a></li>
                     </ul>
                 </nav>
         <!-- hamburger -->
                 <div id="navi">
                         <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#vision">Vison</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about" class="js-smooth-scroll">About</a></li>
+                            <li><a href="#vision" class="js-smooth-scroll">Vison</a></li>
+                            <li><a href="#contact" class="js-smooth-scroll">Contact</a></li>
                         </ul>
-                    </div>
+                </div>
                 <div id="hamburger"></div>
                     <span class="inner_line" id="line1"></span>
                     <span class="inner_line" id="line2"></span>   
                     <span class="inner_line" id="line3"></span>           
                 </div>
-
-                <script>
-                    function hamburger() {
-                        document.getElementById('line1').classList.toggle('line_1');
-                        document.getElementById('line2').classList.toggle('line_2');
-                        document.getElementById('line3').classList.toggle('line_3');
-                        document.getElementById('navi').classList.toggle('in');
-                    }
-                    document.getElementById('hamburger').addEventListener('click' , function () {
-                        hamburger();
-                    } );
-                </script>
-
         </header>
 
 
@@ -155,19 +142,9 @@
                     <leabel><input class="contact-submit" type="submit" value="送信する"></leabel>
                 </div>
             </form>
-            <script>
-                function checkText() {
-                  var text = document.myform.check.value;
-              
-                  if(text.length === 0) {
-                      alert('必須項目を入力して下さい');
-                      return false;
-                    }
-                }
-              </script>
         </div>
         <div class="page_top">
-            <a href="#"></a>
+            <a href="#top" class="js-smooth-scroll"></a>
         </div>
 
         <!-- footer -->
@@ -175,6 +152,7 @@
               <img src="img/logo.png">
               <p>Continue to challenge.</p>
         </footer>
+        <script src="main.js"></script>
     </body>
 
 </html>
