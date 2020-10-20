@@ -108,7 +108,7 @@ nav li:hover {
 /* main
 --------------------*/
 
-.main {
+.top-area {
     background-image: url("img/main.jpg");
     background-size: cover;
     width: 100%;
