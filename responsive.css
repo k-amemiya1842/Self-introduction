@@ -159,7 +159,7 @@
 
     nav {
         display: none;
-        width:80%;
+        width: 80%;
     }
 
     .header-left {
@@ -181,7 +181,7 @@
 
     .message h2 {
         font-size: 25px;
-        padding-top:10px;
+        padding-top: 10px;
         text-shadow: 1px 1px white;
     }
 
@@ -201,7 +201,7 @@
     }
 
     .icon img {
-        width:33%;
+        width: 33%;
     }
 
     .profile {
@@ -222,7 +222,7 @@
 
     .reason {
         text-align: center;
-        width:100%;
+        width: 100%;
     }
 
     .vision-icon p {
@@ -243,7 +243,7 @@
     }
 
     .visions img {
-        width:30%;
+        width: 30%;
     }
 
     .form-item {
@@ -253,14 +253,16 @@
     .leabel {
         float: none;
     }
+
     .inputs {
         float: none;
     }
     
     .contact-submit {
-        font-size: 14px;
-        width: 100%;
+        font-size: 20px;
+        width: 80%;
     }
+
     .alertarea {
         display: block;
         font-size: 10px;
