@@ -284,6 +284,22 @@ textarea {
     padding: 3px 3px;
     margin-left: 5px;
 }
+.alertarea {
+    color: red;
+    background-color: #fee;
+    background-image: url("img/alerticon.png");
+    background-repeat: no-repeat;
+    background-position: 0.35em center;
+    display: inline-block;
+    border-radius: 0.5em;
+    margin-left: 0.5em;
+    padding:1px 0.5em 1px 32px;
+}
+
+.alertarea:empty {
+    display: none;
+}
+
 
 .contact-submit {
     background-color: #4F4B4B;
@@ -293,6 +309,15 @@ textarea {
     letter-spacing: 5px;
     margin-bottom: 50px;
     margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 7px #252424;
+    outline: none;
+}
+
+.contact-submit:active {
+    position:relative;
+    top: 7px;
+    box-shadow: none;
 }
 
 .page_top{
