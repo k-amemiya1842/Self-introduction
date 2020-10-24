@@ -248,10 +248,26 @@
 
     .form-item {
         width: 80%;
+        height: auto;
     }
+    .leabel {
+        float: none;
+    }
+    .inputs {
+        float: none;
+    }
+    
     .contact-submit {
         font-size: 14px;
         width: 100%;
+    }
+    .alertarea {
+        display: block;
+        font-size: 10px;
+        background-size: 10px 10px;
+        width: 90%;
+        margin: 0 0 20px 0;
+        padding: 1px 0.5em 1px 20px;
     }
 
     footer {
