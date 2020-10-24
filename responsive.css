@@ -176,18 +176,20 @@
 
     .message {
         padding: 10px 0;
-        width: 80%;
+        width: 100%;
     }
 
     .message h2 {
-        font-size: 25px;
+        font-size: 18px;
         padding-top: 10px;
         text-shadow: 1px 1px white;
     }
 
     .message p {
-        font-size: 14px;
-        padding-bottom: 10px;
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        text-shadow: 1px 1px white;
     }
 
     .profile-area {
