@@ -121,10 +121,11 @@
             <div class="contents" id="contact">
                 <h2>Contact</h2>
             </div>
-            <form name="myform" onsubmit="return checkText()">
+            <form name="myform">
                 <div class="form-item">
                     <leabel class="leabel">お名前<span class="mandatory">必須</span></leabel>
-                    <input class="inputs" name="check" type="text" />
+                    <input class="inputs check" type="text" />
+                    <span class="alertarea"></span>
                 </div>
                 <div class="form-item">
                     <leabel class="leabel">貴社名</leabel>
@@ -132,11 +133,13 @@
                 </div>
                 <div class="form-item">
                     <leabel class="leabel">メールアドレス<span class="mandatory">必須</span></leabel>
-                    <input class="inputs" name="check" type="email" />
+                    <input class="inputs check" type="email" />
+                    <span class="alertarea"></span>
                 </div>
                 <div class="form-item">
                     <leabel class="leabel">お問合せ内容<span class="mandatory">必須</span></leabel>
-                    <textarea class="inputs" name="check"></textarea>
+                    <textarea class="inputs check"></textarea>
+                    <span class="alertarea"></span>
                 </div>
                 <div class="submit clear">
                     <leabel><input class="contact-submit" type="submit" value="送信する" /></leabel>
